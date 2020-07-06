@@ -1,0 +1,27 @@
+#my_catalog
+{
+    text-align: center;
+
+}
+.my_shop
+{
+    /* 各店舗用スペースのサイズ */
+    display: inline-block;
+    width: 370px; 
+    height: 350px; 
+    margin: 10px;
+    margin-top: 50px;
+}
+.my_text
+{
+    /* 文字サイス、太字設定 */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+.img_shop
+{
+    /* 写真サイズ設定 */
+    width: 370px; 
+    height: 206px; 
+}

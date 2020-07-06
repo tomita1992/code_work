@@ -1,0 +1,15 @@
+.shop
+{
+    /* 各店舗用スペースのサイズ */
+    /*float: left;*/
+    display: inline-block;
+    width: 370px; 
+    height: 360px; 
+    /*margin: 20px;*/
+    margin-left: 30px;
+
+    margin-top: 50px;
+    /* 文字サイス、太字設定 */
+    font-size: 18px;
+    font-weight: bold;
+}
