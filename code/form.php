@@ -1,3 +1,7 @@
+<?php 
+    header('Content-Type: text/html');
+    header('Location: music.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
     <title>新規登録</title>
 </head>
 <body>
-    <form action = "<?php echo $_SERVER['PHP_SELF'] ?>" method = "post">
+    <form action = "<?php echo $_SERVER['PHP_SELF'] ?>" method = "post" enctype="multipart/form-data"> 
         <table>
             <tr>
                 <td><label for="user_id">ログインID</label></td>

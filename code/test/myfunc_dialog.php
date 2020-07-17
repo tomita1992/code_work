@@ -1,6 +1,7 @@
 <!-- 店舗一覧　ダイヤログ -->
+<!-- 使用箇所：固定ページ　各店舗説明の詳細へ -->
 <!DOCTYPE html>
-<html lang = "js">
+<html lang = "ja">
 <head>
    <meta charset = "utf-8">
    <title></title>
@@ -8,7 +9,9 @@
 </head>
    <boby>
         <!-- ボダン生成 -->
-        <button class = "btn">詳細へ</button>
+        <div class = "btn">
+         <button class = "btn">詳細へ</button>
+         </div>
         <!-- ダイヤログ生成 -->
          <div class = "tc">
             <span class = "close">x</span>
@@ -16,6 +19,7 @@
               <!-- 店舗写真、説明 -->
               <img class = "ft"  src = "1.jpg">
                <figcaption>
+                 <p>
                  <strong>
                    <span class= "text">●●●●カフェ<br>
                      利用時間：14時~16時<br>
@@ -23,21 +27,24 @@
                      住所：愛知県名古屋市中区丸の内1-1-1<br>
                    </span>
                  </strong>
+                 </p>
                </figcaption>
             </p>
             <!-- gooleマップ埋め込み -->
-              <p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.
+            <p>
+              <iframe id = "goole" frameborder="0"
+              allowfullscreen="" aria-hidden="false" tabindex="0"  
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.
               2003090455523!2d136.89019931458952!3d35.17655971509218!2m3!1f0!2f0!3f0!3m2!
               1i1024!2i768!4f13.1!3m3!1m2!1s0x600376c54d285e91%3A0x1fefd8aee149c773!2z44C
               SNDUxLTAwNDIg5oSb55-l55yM5ZCN5Y-k5bGL5biC6KW_5Yy66YKj5Y-k6YeO77yR5LiB55uu77
               yV!5e0!3m2!1sja!2sjp!4v1591944623135!5m2!1sja!2sjp"
-              width="500" height="200" frameborder="0" style="border:0;"
-              allowfullscreen="" aria-hidden="false" tabindex="0">
+              >
               </iframe>
-              </p>
+           </p>
 
-            <div class = "bk"></div>
+         <div class = "bk"></div>
+
          </div>
 
          <!-- ダイヤログ表示/消す -->
