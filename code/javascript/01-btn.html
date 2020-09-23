@@ -6,14 +6,32 @@
     <title>ボタンJS練習</title>
 </head>
 <body>
-    <input type="button" value="送信" id="btn">
+    <input type="button" value="最初版" onclick="alert('最初版');">
+    <input type="button" value="改良版" id="btn">
+    <input type="button" value="最終版" id="btn1">
     <script>
+        //ここで関数を定義すると他のファイルから読み込まれた関数と同じ名前の場合そっちの関数が実行される
         function f2()
         {
-            alert('クリックされた');
+            alert('改良版');
         }
         let btn = document.getElementById('btn');
+        // 括弧なしでクリックした時にイベント発生
         btn.onclick=f2;
+        // 括弧を付けるとページ読み込まれた時にそのままイベントを発生する
+        // btn.onclick=f2();
+    </script>
+    <script>
+        // let btn1 = document.getElementById('btn1');
+        //匿名関数を使えば名前を重複する事がなくなる
+        // btn1.onclick = function(){
+        //     window.alert('最終版');
+        // };
+        
+        //上の書き方よりもっと簡単の書き方
+        document.getElementById('btn1').onclick = function(){
+            window.alert('最終版');
+        };
     </script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态加载标签</title>
+</head>
+<body>
+    <input type="button" value="クリック" id="btn">
+    <div id="dv"></div>
+    <script>
+        let btn = document.getElementById('btn');
+        btn.onclick = function(){
+            // document.write("<p>111</p>");
+            document.getElementById('dv').innerHTML += "<p>111</p>";
+        }
+    </script>
+</body>
+</html>

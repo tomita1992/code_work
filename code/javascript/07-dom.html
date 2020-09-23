@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="uu">
+        <li>１</li>
+        <li>２</li>
+        <li>３</li>
+        <li>４</li>
+        <li>５</li>
+    </ul>
+    <script>
+        //element.firstChild()----------------Chrome FireFoxならファーストノード
+        //element.firstChild()----------------IE8ならファーストエレメント
+        //element.firstElementChild()----------------Chrome FireFoxならファーストエレメント
+        //element.firstElementChild()----------------IE8はサポートされていない
+        
+        function getFirstElement(element){
+
+            //if(typeof element.firstElementChild === 'undefined') 
+            //undefined == false
+            if(element.firstElementChild){
+                return element.firstElementChild;
+            }else{
+                //IE８の場合はファーストノードになるけど　ファーストエレメントじゃない可能性はある
+                var node = element.firstChild;
+            }
+        }
+    </script>
+</body>
+</html>

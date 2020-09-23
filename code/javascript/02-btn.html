@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-btn練習</title>
+</head>
+<script>
+    //エラーになる　Cannot set property 'onclick' of null
+    //onclickが存在だけとnullというエラー内容がでたのがは正しいではない
+    document.getElementById('btn').onclick = function(){
+        window.alert('aaa');
+    };
+</script>
+<body>
+    <input type="button" value="ボタン" id="btn">
+</body>
+</html>

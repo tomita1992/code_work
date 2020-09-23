@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数練習</title>
+</head>
+<body>
+    <script>
+        function consoleSum()
+        {
+            var num1 = 10;
+            num2 = 20;
+            let sum = num1 + num2;
+            console.log(sum);
+        }
+        consoleSum();
+        var consoleSum1 = function(){
+            var num1 = 10;
+            num2 = 20;
+            let sum = num1 + num2;
+            console.log(sum);
+            return sum;
+        }
+        console.log(consoleSum1());
+        
+    </script>
+</body>
+</html>

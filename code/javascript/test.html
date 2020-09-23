@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    
+    <button id="btn">送信</button>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/javascript/img_save.php');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.send('path=/wordpress/saa');
+            xhr.addEventListener('readystatechange', function(){
+                    if(this.readyState !== 4) return;
+                        if(this.status !== 200) return;
+                            console.log(this.responseText);
+                });
+        }
+    </script>
+    <script>
+        let myname = 'tomita';
+        function get_name(){
+            console.log(myname);
+        }
+        get_name();
+    </script>
+</body>
+</html>
